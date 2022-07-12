@@ -1,0 +1,12 @@
+@import 'global';
+
+.nav-links{
+    @include background;
+    padding: 2rem;
+
+    a {
+        color: inherit;
+    }
+}
+
+

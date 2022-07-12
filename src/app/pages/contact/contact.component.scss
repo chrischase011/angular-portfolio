@@ -1,0 +1,11 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    &--violet{
+        background-color: violet;
+        color: white;
+    }
+}

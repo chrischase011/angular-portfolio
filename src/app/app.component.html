@@ -1,0 +1,30 @@
+<h1>Hello Chase</h1>
+
+<main>
+  <header>
+    <ul class="nav-links">
+      <li *ngFor="let item of navItemsArray">
+        <button (click)="linkClick(item)">{{item["name"]}}</button>
+        <!-- <button (click)="linkClick(item)">{{item['name']}}</button> -->
+      </li>
+    </ul>
+  </header>
+
+
+  <!-- <app-nav-listener></app-nav-listener> -->
+</main>
+<app-hero-banner></app-hero-banner>
+<router-outlet></router-outlet>
+<!-- <h1 *ngIfElse="user === 'chase' else notAdmin">Chase Admin 😊</h1>
+<h1 #notAdmin >Chase not Admin ☹</h1> -->
+
+<!-- <ng-container *ngIf="user === 'chases'; else notAdmin">
+  <h1>Chase admin</h1>
+</ng-container>
+<ng-template #notAdmin>
+  <h1>Chase not admin</h1>
+</ng-template> -->
+
+<!-- <p *ngFor="let car of cars">{{car}}</p> -->
+<!-- <p *ngFor="let car of cars" class="car">{{car}}</p> -->
+

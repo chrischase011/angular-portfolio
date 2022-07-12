@@ -1,0 +1,21 @@
+<div class="about-item about-item--pink">
+    <!-- {{ navItem.name }} -->
+
+    <header class="about-header">
+        <h1>About me!</h1>
+
+        <img src="assets/img/me.jpg" class="about-header__image">
+    </header>
+    <nav class="about-nav">
+        <ul class="about-item__list">
+            <li>
+                <button (click)="changeAboutList('hobbies')" class="about-item__button about-item__border-bottom" [ngClass]="{'about-item__border-bottom': selectedAboutList === 'hobbies'}">Hobbies</button>
+            </li>
+            <li>
+                <button (click)="changeAboutList('skills')" class="about-item__button" [ngClass]="{'about-item__border-bottom': selectedAboutList === 'skills'}">Skills</button>
+            </li>
+        </ul>
+    </nav>
+    
+    <app-about-me-hobbies [selectedList]="selectedAboutList"></app-about-me-hobbies>
+</div>

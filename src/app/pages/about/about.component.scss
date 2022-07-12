@@ -1,0 +1,59 @@
+.about-item{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    &--steelblue{
+        background-color: steelblue;
+        color: white;
+    }
+
+    &--pink{
+        background-color: pink;
+        color: white;
+    }
+
+    &--violet{
+        background-color: violet;
+        color: white;
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+
+        li{
+            margin-left: 10px;
+        }
+    }
+
+    &__button{
+        background-color: white;
+        color:black;
+        margin-right: 2rem;
+        border: none;
+
+        width: 150px;
+        height:60px;
+
+    }
+
+    &__border-bottom{
+        border-bottom: 5px solid lime;
+    }
+}
+
+.about-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-header{
+    display: flex; 
+    flex-direction:column;
+
+    &__image{
+        width:20%;
+        align-self: center;
+    }
+}
